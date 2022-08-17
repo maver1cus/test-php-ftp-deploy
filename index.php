@@ -1,7 +1,14 @@
 <?php
+require_once './vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$s3_bucket = $_ENV['SOME_API_KEY'];
 
 try {
     echo 'Current PHP version: ' . phpversion();
+    echo '<br />';
+    echo $s3_bucket;
     echo '<br />';
 
     $host = 'db';

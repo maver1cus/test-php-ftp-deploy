@@ -1,0 +1,17 @@
+{
+    "name": "mavericus/docker-php",
+    "autoload": {
+        "psr-4": {
+            "Mavericus\\DockerPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sergey Petrov",
+            "email": "mavericusdev@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

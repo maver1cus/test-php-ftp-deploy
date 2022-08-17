@@ -18,6 +18,13 @@ jobs:
           npm install
           npm run build
 
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1.3
+        with:
+          envkey_SOME_API_KEY: "123456abcdef"
+          some_other_variable: foobar
+          file_name: .env
+          fail_on_empty: false
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
