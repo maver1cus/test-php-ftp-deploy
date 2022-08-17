@@ -19,9 +19,9 @@ jobs:
           npm run build
 
       - name: install composer
-        uses: "ramsey/composer-install@v2"
-          with:
-            dependency-versions: "lowest"
+        uses: ramsey/composer-install@v2
+        with:
+          dependency-versions: "lowest"
 
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v1.3
