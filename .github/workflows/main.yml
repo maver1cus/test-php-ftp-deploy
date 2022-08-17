@@ -19,7 +19,7 @@ jobs:
           npm run build
 
       - name: install composer
-        - uses: "ramsey/composer-install@v2"
+        uses: "ramsey/composer-install@v2"
           with:
             dependency-versions: "lowest"
 
