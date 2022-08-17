@@ -21,9 +21,10 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ftp.samkirkland.com
-          username: myFtpUserName
+          server: ftp79.hostland.ru
+          username: host1848044
           password: ${{ secrets.password }}
+          server-dir: host1848044.hostland.pro/htdocs/www/
           exclude: |
             **/.git*
             **/.git*/**
